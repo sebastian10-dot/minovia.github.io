@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -9,7 +9,7 @@
 body{
     margin:0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg,#ff758c,#ff7eb3);
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
     text-align:center;
     color:white;
 }
@@ -28,7 +28,7 @@ img{
     max-width:400px;
     height:auto;
     border-radius:15px;
-    box-shadow:0 10px 20px rgba(0,0,0,0.3);
+    box-shadow:0 10px 20px rgba(0,0,0,0.4);
 }
 
 .poema{
@@ -42,17 +42,22 @@ button{
     border:none;
     border-radius:8px;
     background:white;
-    color:#ff4e91;
+    color:#203a43;
     font-weight:bold;
     cursor:pointer;
     margin-top:10px;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#dbe9f4;
 }
 </style>
 </head>
 
 <body>
 
-<h1>Mi novia, la más hermosa de todas 💖</h1>
+<h1>Mi novia, la más hermosa de todas 💙</h1>
 
 <div class="container">
     <img id="foto" src="foto1.jpg">
@@ -92,4 +97,5 @@ document.getElementById("poema").innerText = poemas[0];
 </script>
 
 </body>
+</html>
 </html>
