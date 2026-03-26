@@ -1,0 +1,95 @@
+<html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Novia ❤️</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#ff758c,#ff7eb3);
+    text-align:center;
+    color:white;
+}
+
+h1{
+    margin-top:20px;
+    font-size:28px;
+}
+
+.container{
+    margin-top:20px;
+}
+
+img{
+    width:90%;
+    max-width:400px;
+    height:auto;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+.poema{
+    margin:20px;
+    font-size:18px;
+    font-style:italic;
+}
+
+button{
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    background:white;
+    color:#ff4e91;
+    font-weight:bold;
+    cursor:pointer;
+    margin-top:10px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Mi novia, la más hermosa de todas 💖</h1>
+
+<div class="container">
+    <img id="foto" src="foto1.jpg">
+    <div class="poema" id="poema"></div>
+    <button onclick="siguiente()">Siguiente</button>
+</div>
+
+<script>
+let imagenes = [
+    "foto1.jpg",
+    "foto2.jpg",
+    "foto3.jpg",
+    "foto4.jpg",
+    "foto5.jpg"
+];
+
+let poemas = [
+"Mi niña hermosa, preciosa y divina… quiero agradecerte por el tiempo que has estado para mí y por seguir a mi lado cada día.",
+"Gracias por tu paciencia, por tu amor y por regalarme momentos que se han vuelto eternos en mi corazón.",
+"Eres mi alegría constante, mi apoyo firme y la razón por la que sonrío sin darme cuenta.",
+"Valoro cada segundo contigo, porque contigo todo tiene más sentido.",
+"Si tuviera que elegir de nuevo, te elegiría a ti, siempre."
+];
+
+let index = 0;
+
+function siguiente(){
+    index++;
+    if(index >= imagenes.length){
+        index = 0;
+    }
+    document.getElementById("foto").src = imagenes[index];
+    document.getElementById("poema").innerText = poemas[index];
+}
+
+document.getElementById("poema").innerText = poemas[0];
+</script>
+
+</body>
+</html>
